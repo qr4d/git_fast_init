@@ -22,6 +22,10 @@ host github.com
 ```
 然后重新执行seturl.sh设置。
 
+# PS关于隐藏文件
+显示隐藏文件 ··defaults write com.apple.finder AppleShowAllFiles -bool true
+关闭显示隐藏文件 ··defaults write com.apple.finder AppleShowAllFiles -bool false
+
 # 感谢
 [理想的彼岸](https://www.zdynb.cn/2022/kuai-su-chu-shi-hua-git-cang-ku.html)
 [阿湯哥](https://blog.csdn.net/ttyy1112/article/details/107863210)
