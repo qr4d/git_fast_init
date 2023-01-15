@@ -14,6 +14,7 @@
 # 权限设置
 执行seturl.sh会要求提供github用户名密码，其中，密码不是登录密码，而是access tokens，可以在Settings-DeveloperSettings-PersonalAccessTokens里面生成，最长有效期90天。一般选择CommitStatuses/Contents/Issues/PullRequests等选项的Read and Write权限。
 如果token过期需要更换，可以在终端执行以下命令删除旧token
+
 ```
 $ git credential reject
 protocol https
@@ -24,10 +25,12 @@ host github.com
 
 # PS关于隐藏文件
 显示隐藏文件 ··defaults write com.apple.finder AppleShowAllFiles -bool true
+
 关闭显示隐藏文件 ··defaults write com.apple.finder AppleShowAllFiles -bool false
 
 # 感谢
 [理想的彼岸](https://www.zdynb.cn/2022/kuai-su-chu-shi-hua-git-cang-ku.html)
+
 [阿湯哥](https://blog.csdn.net/ttyy1112/article/details/107863210)
 
 
