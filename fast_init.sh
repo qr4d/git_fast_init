@@ -93,13 +93,8 @@ git commit -m "\$m"
 # 兼容处理
 for i in \$gitRemote; do
     # echo "\$i"
-    # 如果i等于origin则跳过,否则推送
-    if [ "\$i" == "origin" ]; then
-        echo "不推送origin"
-    else
-        echo "推送\$i"
-        git push "\$i" "\$branchName"
-    fi
+    echo "推送\$i"
+    git push "\$i" "\$branchName"
 done
 EOF
 
