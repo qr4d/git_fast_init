@@ -17,8 +17,8 @@
 
 ```
 $ git credential reject
-protocol https
-host github.com
+protocol=https
+host=github.com
 
 ```
 然后重新执行seturl.sh设置。
