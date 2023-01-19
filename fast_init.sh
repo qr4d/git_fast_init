@@ -86,7 +86,7 @@ else
 fi
 gitRemote=\$(git remote)
 # 获取当前分支名
-branchName=$(git symbolic-ref --short -q HEAD)
+branchName=\$(git symbolic-ref --short -q HEAD)
 echo "\$branchName"
 git add .
 git commit -m "\$m"
